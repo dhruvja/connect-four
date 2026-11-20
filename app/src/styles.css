@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@keyframes drop {
+  from { transform: translateY(-420%); }
+  to { transform: translateY(0); }
+}
+.piece-drop { animation: drop 0.35s cubic-bezier(0.4, 0, 0.6, 1); }

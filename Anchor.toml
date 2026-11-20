@@ -1,0 +1,20 @@
+[toolchain]
+anchor_version = "1.2.0"
+package_manager = "pnpm"
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+connect_four = "9bji6FPUqL4E6CX7cdNAebFjT8CtFoAybP6jgXoud3GJ"
+
+[programs.devnet]
+connect_four = "9bji6FPUqL4E6CX7cdNAebFjT8CtFoAybP6jgXoud3GJ"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "cd tests-svm && cargo test -- --test-threads=1"

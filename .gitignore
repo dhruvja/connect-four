@@ -1,0 +1,8 @@
+target/
+node_modules/
+.anchor/
+tests-svm/target/
+app/dist/
+app/.env.local
+keys/
+.DS_Store

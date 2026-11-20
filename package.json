@@ -1,0 +1,31 @@
+{
+  "name": "connect-four",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --config app/vite.config.ts",
+    "typecheck": "tsc -p app/tsconfig.json --noEmit && tsc -p scripts/tsconfig.json --noEmit",
+    "setup:devnet": "tsx scripts/setup-devnet.ts",
+    "e2e:devnet": "tsx scripts/e2e-devnet.ts",
+    "test:svm": "cd tests-svm && cargo test"
+  },
+  "dependencies": {
+    "@solana/spl-token": "0.4.14",
+    "@solana/web3.js": "1.98.4",
+    "bs58": "6.0.0",
+    "buffer": "6.0.3",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.1.16",
+    "@types/node": "22.19.1",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "@vitejs/plugin-react": "5.1.0",
+    "tailwindcss": "4.1.16",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
+    "vite": "7.2.2"
+  }
+}
